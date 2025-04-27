@@ -16,126 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-8a-5P4">
-                                <rect key="frame" x="107.33333333333333" y="315" width="178.66666666666669" height="222"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-8a-5P4">
+                                <rect key="frame" x="143.66666666666666" y="368.66666666666669" width="105.66666666666666" height="115"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-oG-17W">
-                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="222"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYp-11-RsL">
+                                        <rect key="frame" x="0.0" y="0.0" width="105.66666666666667" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Player"/>
+                                        <connections>
+                                            <action selector="addPlayerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Kt-hL-Aa5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-o3-bAa">
+                                        <rect key="frame" x="0.0" y="38.333333333333314" width="105.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNZ-ff-JCJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg5-l5-HJi">
+                                        <rect key="frame" x="0.0" y="76.666666666666629" width="105.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="History"/>
+                                        <connections>
+                                            <action selector="historyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zrr-ft-ECW"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-oG-17W">
+                                        <rect key="frame" x="0.0" y="115" width="105.66666666666667" height="0.0"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KsE-O9-1Gu">
-                                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="103"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-m0-7N9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="34.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Lives: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-mS-6xI">
-                                                        <rect key="frame" x="0.0" y="34.333333333333314" width="178.66666666666666" height="34.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0l-Ju-hSo">
-                                                        <rect key="frame" x="0.0" y="68.666666666666686" width="178.66666666666666" height="34.333333333333343"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6y-4J-OJo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                                                <connections>
-                                                                    <action selector="player1PlusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjZ-Xa-jb2"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-Z9-IT7">
-                                                                <rect key="frame" x="44.666666666666671" y="0.0" width="44.666666666666671" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="-"/>
-                                                                <connections>
-                                                                    <action selector="player1MinusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HtD-P5-oJ6"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-8C-iNu">
-                                                                <rect key="frame" x="89.333333333333329" y="0.0" width="44.666666666666671" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="+5"/>
-                                                                <connections>
-                                                                    <action selector="player1Plus5Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwb-X0-o2w"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QS-w9-s4W">
-                                                                <rect key="frame" x="134" y="0.0" width="44.666666666666657" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="-5"/>
-                                                                <connections>
-                                                                    <action selector="player1Minus5Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkT-jG-Odp"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jZW-EX-bxj">
-                                                <rect key="frame" x="0.0" y="119" width="178.66666666666666" height="103"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUA-Iw-nc4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="34.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Lives: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4m-St-013">
-                                                        <rect key="frame" x="0.0" y="34.333333333333314" width="178.66666666666666" height="34.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imQ-AO-iKE">
-                                                        <rect key="frame" x="0.0" y="68.666666666666686" width="178.66666666666666" height="34.333333333333343"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7L-MO-pjm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                                                <connections>
-                                                                    <action selector="player2PlusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSc-gU-Ix5"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ez-E2-wVJ">
-                                                                <rect key="frame" x="44.666666666666671" y="0.0" width="44.666666666666671" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="-"/>
-                                                                <connections>
-                                                                    <action selector="player2MinusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFX-hk-C1m"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ll-85-IFE">
-                                                                <rect key="frame" x="89.333333333333329" y="0.0" width="44.666666666666671" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="+5"/>
-                                                                <connections>
-                                                                    <action selector="player2Plus5Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vol-Dm-V1h"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUd-2O-NXP">
-                                                                <rect key="frame" x="134" y="0.0" width="44.666666666666657" height="34.333333333333336"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="-5"/>
-                                                                <connections>
-                                                                    <action selector="player2Minus5Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmT-kb-L9d"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </stackView>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X LOSES!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-fv-5JZ">
-                                                <rect key="frame" x="0.0" y="222" width="178.66666666666666" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -154,14 +66,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loseMessageLabel" destination="HKl-fv-5JZ" id="Yie-If-6e5"/>
-                        <outlet property="player1LifeLabel" destination="zMZ-mS-6xI" id="ctv-Zv-TM4"/>
-                        <outlet property="player2LifeLabel" destination="J4m-St-013" id="wRf-lL-o76"/>
+                        <outlet property="addPlayerButton" destination="WYp-11-RsL" id="0km-ps-dar"/>
+                        <outlet property="historyButton" destination="hg5-l5-HJi" id="NvN-2U-oC1"/>
+                        <outlet property="playersStackView" destination="xmw-oG-17W" id="k5S-gj-Zpy"/>
+                        <outlet property="resetButton" destination="zZu-o3-bAa" id="LQF-LT-Xdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
@@ -169,7 +82,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
